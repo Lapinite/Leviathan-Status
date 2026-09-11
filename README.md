@@ -14,6 +14,14 @@
 
 </div>
 
+## Incident lifecycle
+
+<p align="center">
+  <img width="100%" src="assets/incident-flow.svg" alt="Animated Leviathan public incident lifecycle">
+</p>
+
+Status communication should prioritize affected public components, user impact, current state, mitigation progress, recovery, and any required user action.
+
 ## Status model
 
 <table width="100%">
@@ -38,25 +46,11 @@ This repository is intended to provide public information about:
 
 Only public-facing components should be named here.
 
-## Incident communication flow
+## Service boundaries
 
-```text
-Signal detected
-      ↓
-Public impact confirmed
-      ↓
-Incident opened
-      ↓
-Investigation / mitigation
-      ↓
-Recovery validation
-      ↓
-Resolved
-      ↓
-Public history / follow-up when useful
-```
+Public status may eventually cover intentionally exposed Leviathan components such as launcher-facing services, public APIs, authentication-facing integrations, Cast-facing services, developer integrations and other user-visible platform components.
 
-Status communication should prioritize what users and developers need to know: affected public components, user impact, current state, mitigation progress, recovery, and any required user action.
+Microsoft, Xbox, Minecraft/Mojang and other third-party services remain external systems. If an external dependency affects Leviathan users, public status can describe the user impact and dependency category without publishing private provider account details, internal infrastructure topology, credentials or sensitive diagnostics.
 
 ## Privacy and infrastructure safety
 
