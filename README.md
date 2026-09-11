@@ -16,58 +16,31 @@
 
 ## Incident lifecycle
 
-<p align="center">
-  <img width="100%" src="assets/incident-flow.svg" alt="Animated Leviathan public incident lifecycle">
-</p>
+<p align="center"><img width="100%" src="assets/incident-flow.svg" alt="Animated Leviathan public incident lifecycle"></p>
 
-Status communication should prioritize affected public components, user impact, current state, mitigation progress, recovery, and any required user action.
+<p align="center"><sub>Status communication prioritizes affected public components, user impact, current state, mitigation, recovery and required user action.</sub></p>
 
-## Status model
+## Public state model
 
-<table width="100%">
-<tr>
-<td width="25%" valign="top"><strong>Operational</strong><br><sub>Public component is functioning within expected conditions</sub></td>
-<td width="25%" valign="top"><strong>Degraded</strong><br><sub>Service is available but experiencing reduced reliability or performance</sub></td>
-<td width="25%" valign="top"><strong>Incident</strong><br><sub>Public user impact is under investigation or mitigation</sub></td>
-<td width="25%" valign="top"><strong>Maintenance</strong><br><sub>Planned maintenance with public-facing impact</sub></td>
-</tr>
-</table>
+<p align="center"><img width="100%" src="assets/state-map.svg" alt="Animated Leviathan public service state model"></p>
 
-## Purpose
-
-This repository is intended to provide public information about:
-
-- service availability
-- degraded performance
-- scheduled maintenance
-- public incidents
-- recovery updates
-- incident history
-
-Only public-facing components should be named here.
+<p align="center"><sub>Operational, degraded, incident and maintenance states communicate what users need without publishing private infrastructure detail.</sub></p>
 
 ## Service boundaries
 
 Public status may eventually cover intentionally exposed Leviathan components such as launcher-facing services, public APIs, authentication-facing integrations, Cast-facing services, developer integrations and other user-visible platform components.
 
-Microsoft, Xbox, Minecraft/Mojang and other third-party services remain external systems. If an external dependency affects Leviathan users, public status can describe the user impact and dependency category without publishing private provider account details, internal infrastructure topology, credentials or sensitive diagnostics.
+Microsoft, Xbox, Minecraft/Mojang and other third-party services remain external systems. If an external dependency affects Leviathan users, public status can describe user impact and the dependency category without exposing provider account details or internal topology.
 
 ## Privacy and infrastructure safety
 
-Status information must not expose private hostnames, private IP addresses, credentials, internal topology, administrative endpoints, provider account identifiers, personal information, database details, or security-sensitive implementation information.
+Status information must not expose private hostnames, private IP addresses, credentials, internal topology, administrative endpoints, provider account identifiers, personal information, database details or security-sensitive implementation information.
 
 Incident reports should explain user impact and resolution at a useful public level without publishing details that create unnecessary security risk.
 
 ## Publication principles
 
-A public status update should be:
-
-- accurate
-- timestamped
-- scoped to user-facing impact
-- clear about whether an incident is ongoing or resolved
-- free from speculation presented as fact
-- safe to publish without exposing private infrastructure
+A public status update should be accurate, timestamped, scoped to user-facing impact, clear about whether an incident is ongoing or resolved, free from speculation presented as fact, and safe to publish.
 
 ## Current status
 
@@ -77,10 +50,10 @@ The absence of a listed public component should not be interpreted as proof that
 
 ## Related repositories
 
-| Repository | Role |
-| --- | --- |
-| [Leviathan Launcher](https://github.com/Lapinite/Leviathan-Launcher) | Public launcher information |
-| [Leviathan Docs](https://github.com/Lapinite/Leviathan-Docs) | Ecosystem documentation |
-| [Leviathan API Docs](https://github.com/Lapinite/Leviathan-API-Docs) | Public API documentation |
-| [Leviathan Integrations](https://github.com/Lapinite/Leviathan-Integrations) | Supported public integrations |
-| [Leviathan Server Tools](https://github.com/Lapinite/Leviathan-Server-Tools) | Public server tooling |
+<p align="center">
+<a href="https://github.com/Lapinite/Leviathan-Launcher"><strong>Launcher</strong></a> ·
+<a href="https://github.com/Lapinite/Leviathan-Docs"><strong>Docs</strong></a> ·
+<a href="https://github.com/Lapinite/Leviathan-API-Docs"><strong>API Docs</strong></a> ·
+<a href="https://github.com/Lapinite/Leviathan-Integrations"><strong>Integrations</strong></a> ·
+<a href="https://github.com/Lapinite/Leviathan-Server-Tools"><strong>Server Tools</strong></a>
+</p>
